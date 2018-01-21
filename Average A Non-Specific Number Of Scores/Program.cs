@@ -3,6 +3,10 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+/* Create a console application that will accept an arbitrary number of test scores, specified 
+ * by the user, between 0 and 100, average them, and report a letter grade for the average based
+ * based on the usual scale. FLOW: teacher inputs the total number of tests, then inputs test
+ * scores and see the average numberical grade and the letter grade. */
 
 namespace Average_A_Specific_Number_Of_Scores
 {
@@ -18,26 +22,59 @@ namespace Average_A_Specific_Number_Of_Scores
             var elicitedSum = inputTestScores(nTests);
 
             // Average input test scores
-            var avg = elicitedSum / nTests;
+           var avg = elicitedSum / nTests;
 
             // Output letter grade for average of test scores
             // Categorize the average as a letter grade
-            var letterGrade = makeLetterGrade(avg);
+           var letterGrade = makeLetterGrade(avg);
 
             // Output the grade
-            Console.WriteLine($"The average letter grade for this test is: {letterGrade}");
+           Console.WriteLine($"The average letter grade for this test is: {letterGrade}");
         }
-        static int readInt(int nTests)
+        // Converts the string representation of the number entered and converts it to it's integer 
+        // representation and passes that value back to nTests. 
+        static int readInt() => int.Parse(Console.ReadLine());
+        
+        //Return the sum of test scores entered.
+        //query test scores from the user between 0 and 100.
+            //create query of test score.
+            //test score entered to be between 0 and 100.
+                //if score entered aren't between 0 and 100 return an error statement.
+                //if score entered are between 0 and 100 do something.
+        static int inputTestScores(int nTests)
         {
 
-        }
-        static int inputTestScores(int avg)
-        {
+            int sumOfScores = 0;
+            var testKeeperTrackerOfer = 0; 
+            // Do this while number of tests to enter hasn't been met.
+            // exit when the number of tests has been.
+            // keep track of current tests that are valid.
+            while (testKeeperTrackerOfer < nTests)
+            {
+                //create query of test score.
+                Console.WriteLine("Enter a test score:");
+                int testScore = int.Parse(Console.ReadLine());
 
+                //test score entered to be between 0 and 100.
+                if (testScore >= 0 && testScore <= 100)
+                {
+                    // do something
+                    sumOfScores += testScore;
+                    //record number of times the score has been entered.
+                    testKeeperTrackerOfer += 1;
+                }
+                else
+                {
+                    // return an error statement.
+                    Console.WriteLine("You did not enter a value between 0 and 100.");
+                }
+            }
+            return sumOfScores;
         }
-        static char makeLetterGrade(int avg)
-        {
+          static char makeLetterGrade(int avg)
+          {
 
-        }
+          }
+          
     }
 }
