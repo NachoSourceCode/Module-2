@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Average Ten Scores", "Avera
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Average A Specific Number Of Scores", "Average A Non-Specific Number Of Scores\Average A Specific Number Of Scores.csproj", "{37D7D22B-8B03-4E6E-BD1F-215F159B09F7}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AverageANon-SpecificNumberOfScores", "AverageANon-SpecificNumberOfScores\AverageANon-SpecificNumberOfScores.csproj", "{5702BD44-5B40-4EE4-B4E3-562C173925B4}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{37D7D22B-8B03-4E6E-BD1F-215F159B09F7}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{37D7D22B-8B03-4E6E-BD1F-215F159B09F7}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{37D7D22B-8B03-4E6E-BD1F-215F159B09F7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5702BD44-5B40-4EE4-B4E3-562C173925B4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5702BD44-5B40-4EE4-B4E3-562C173925B4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5702BD44-5B40-4EE4-B4E3-562C173925B4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5702BD44-5B40-4EE4-B4E3-562C173925B4}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
